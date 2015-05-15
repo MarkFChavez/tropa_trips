@@ -18,9 +18,12 @@
         -#     %label
         -#       = f.check_box :remember_me
         -#       Remember me
+  
+        .pull-right
+          .top10
+            = f.submit "Sign in", class: "btn btn-primary"
 
-        .top10
-          = f.submit "Sign in", class: "btn btn-primary"
+          -# .top10
+          -#   = render "devise/shared/links"
 
-        .top10
-          = render "devise/shared/links"
+        .clearfix
