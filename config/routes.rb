@@ -1,7 +1,8 @@
 Rails.application.routes.draw do
-  devise_for :admins do
-    root "devise/sessions#new"
-  end
+
+  root "application#index"
+
+  devise_for :admins
 
   namespace :admin do
     resource :dashboard, only: [:show]
