@@ -2,7 +2,6 @@ source 'https://rubygems.org'
 
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.4'
-gem 'bootstrap-material-design'
 gem 'haml'
 gem 'haml-rails'
 
