@@ -7,9 +7,14 @@
     = csrf_meta_tags
 
   %body
+    = render "layouts/admin/nav"
+
     .container
       .row
-        .col-lg-12
+        .col-lg-4
+          = render "layouts/admin/sidebar"
+
+        .col-lg-8
           = yield
 
     = javascript_include_tag 'application', 'data-turbolinks-track' => true
