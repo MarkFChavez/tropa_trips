@@ -7,4 +7,12 @@ Rails.application.routes.draw do
   namespace :admin do
     resource :dashboard, only: [:show]
   end
+
+  namespace :api, :defaults => { :format => :json } do
+    namespace :v1 do
+      resources :groups,
+                :trips,
+                :itinerary
+    end
+  end
 end
